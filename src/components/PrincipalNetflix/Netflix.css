@@ -1,0 +1,105 @@
+.netflix{
+    background-image: linear-gradient(0deg, rgba(0,0,0 ,0.5),rgba(0,0,0 ,0.5)),url('https://static.fanpage.it/wp-content/uploads/sites/25/2022/11/netflix_il_piano_di_abbonamento.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.netflix__container{
+    width: 80%;
+    margin: 0 auto;
+}
+.netflix__logo {
+    height: 15rem;
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+}
+.nextflix__title{
+   font-size: 4.4rem;
+   color: rgb(170, 4, 4);
+   font-weight: bold;
+}
+
+.netflix__information{
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.netflix__description{
+    width: 90%;
+    margin: 0 auto;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.netflix__h2{
+    font-size: 6rem;
+    font-weight: bold;
+}
+.netflix__subtitle{
+    font-size: 2.8rem;
+}
+.netflix__parrafo{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.netflix__formulario{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+.netflix__input{
+    height: 5rem;
+    width: 40rem;
+    outline: none;
+    border: none;
+    font-size: 2rem;
+}
+.netflix__input::placeholder{
+    color: black;
+    font-weight: bold;
+    opacity: .8;
+}
+
+.netflix__btn{
+    margin-left: 2rem;
+    height: 5rem;
+    width: 14rem;
+    font-size: 4rem;
+    
+} 
+@media (max-width:479px){
+    .nextflix__title{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .netflix__h2{
+        font-size: 3rem;
+    }
+    .netflix__subtitle{
+        font-size: 2.3rem;
+    }
+    .netflix__parrafo{
+        font-size: 2rem;
+    }
+    .netflix__information{
+        height: 45rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .netflix__description{
+        width: 100%;
+    }
+}
+@media(max-width:1024px){
+    
+    .netflix__h2{
+        font-size: 4rem;
+    }
+
+}

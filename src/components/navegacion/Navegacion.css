@@ -1,0 +1,51 @@
+li{
+    list-style: none;
+}
+.nav{
+    height: 7.5rem;
+    background:linear-gradient(0deg, rgba(9, 12, 54, 0.5),rgba(0, 0, 0, 0.5)), #1b1b32 ;
+
+}
+.nav__logo{
+    color: rgb(170, 4, 4);
+    font-weight: bold;
+    cursor: pointer;
+}
+.nav__container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__description{
+    display: flex;
+    width: 60rem;
+}
+.nav__ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40rem;
+    margin: 0;
+}
+.nav__image{
+    height: 3.3rem;
+    width: 3.3rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.nav__link{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 2rem;
+}
+.nav__account{
+    display: flex;
+    align-items: center;
+}
+.nav__user{
+    margin-right: 2rem;
+}
