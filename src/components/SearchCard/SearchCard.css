@@ -1,0 +1,18 @@
+.searchCard{
+    margin-top: 8rem;
+
+}
+.searchCard__title{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.searchCard__movie{
+    margin-bottom: 5rem;
+}
+.searchCard__image{
+    height: 50rem;
+    width: 40rem;
+    border-radius: 1rem;
+}

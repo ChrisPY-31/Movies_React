@@ -1,9 +1,14 @@
 import React from "react";
 import "./Navegacion.css";
 import { Link , useNavigate} from "react-router-dom";
-
+import { useSelector , useDispatch } from "react-redux";
+import { getBusqueda } from "../../store/reducers/Movies/movieSlice";
+import SearchMovie from "../SearchMovie/SearchMovie";
 const Navegacion = () => {
+  const { busqueda } = useSelector(state => state.movie)
+  console.log(busqueda)
   const navigate = useNavigate()
+  const dispatch = useDispatch()
   return (
     <nav className="nav">
       <div className="nav__container">
@@ -15,7 +20,7 @@ const Navegacion = () => {
               <Link className="nav__link text-uppercase" to={'/'}>Inicio</Link>
             </li>
             <li>
-              <Link className="nav__link text-uppercase">Busqueda</Link>
+              <Link className="nav__link text-uppercase" onClick={()=>dispatch(getBusqueda())}>Busqueda</Link>
             </li>
             <li>
               <Link className="nav__link text-uppercase">Mi lista</Link>{" "}
@@ -34,6 +39,9 @@ const Navegacion = () => {
           />
         </div>
       </div>
+      {busqueda &&(
+        <SearchMovie/>
+      )}
     </nav>
   );
 };

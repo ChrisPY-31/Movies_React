@@ -1,5 +1,5 @@
-import { FechApi } from "../../../api/api";
-import { getCategoryMovie, setCategory, setMovie } from "./movieSlice";
+import { FechApi, SearchApi } from "../../../api/api";
+import { getCategoryMovie, setCategory, setMovie,getSearchCard } from "./movieSlice";
 const API_KEY = "&api_key=95049d755e418ded0e8cdfc751756e40";
 const apiComedi =
 "/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc";
@@ -20,6 +20,15 @@ export const getMovie = () => {
     dispatch(setMovie(data.results));
   };
 };
+
+export const getSearch = (SearcMovie)=>{
+  return async (dispatch , getState) =>{
+    const apiKey = '95049d755e418ded0e8cdfc751756e40'
+    const {data} = await SearchApi.get(`?api_key=${apiKey}&query=${SearcMovie}`)
+    dispatch(getSearchCard(data.results))
+  }
+}
+
 export const getCategory = (category) => {
   return async (dispatch, getState) => {
    

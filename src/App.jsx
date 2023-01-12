@@ -8,7 +8,7 @@ import "./index.css";
 import { DescriptionMovie } from "./components/DescriptionMovie/DescriptionMovie";
 import { Category } from "./components/Category/Category";
 import MoviesHome from "./components/MoviesHome/MoviesHome";
-import axios from "axios";
+
 const App = () => {
   const { isLoading } = useSelector((state) => state.movie);
   console.log(isLoading);
@@ -17,11 +17,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(getMovie());
-    const locoApi = async ()=>{
-    const data = await axios.get(`https://api.themoviedb.org/3&api_key=95049d755e418ded0e8cdfc751756e40&query=batman`)
-    console.log(data)
-    }
-    locoApi()
+    
   }, []);
   if(!isLoading){
     return(

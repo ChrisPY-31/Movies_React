@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { getSearch } from './thunks';
 
 const initialState = {
     movie:[],
@@ -6,9 +7,11 @@ const initialState = {
     busquedaNav: ['Incio' , 'Busqueda' , 'Favorites' ,'Peliculas' , 'Series'],
     isLoading:false,
     navegacion:false,
+    busqueda:false,
     setFavoritesObject:[],
     description:[],
     category:[],
+    search:[],
     imagen: "https://image.tmdb.org/t/p/original",
     getcategorylink: ''
 }
@@ -34,6 +37,12 @@ export const movieSlice = createSlice({
         },
         getCategoryMovie: (state , action)=>{
             state.category = action.payload
+        },
+        getBusqueda:(state )=>{
+            state.busqueda = !state.busqueda
+        },  
+        getSearchCard:(state , action)=>{
+            state.search = action.payload
         }
     }
 });
@@ -41,5 +50,5 @@ export const movieSlice = createSlice({
 
 // Action creators are generated for each case reducer function
 export const { isLoadingPage ,NavigateMovie , setMovie ,
-    setDescription , setCategory ,getCategoryMovie
+    setDescription , setCategory ,getCategoryMovie , getBusqueda,getSearchCard
 } = movieSlice.actions;
