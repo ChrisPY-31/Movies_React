@@ -6,7 +6,7 @@ import { getBusqueda } from "../../store/reducers/Movies/movieSlice";
 import SearchMovie from "../SearchMovie/SearchMovie";
 const Navegacion = () => {
   const { busqueda } = useSelector(state => state.movie)
-  console.log(busqueda)
+  
   const navigate = useNavigate()
   const dispatch = useDispatch()
   return (

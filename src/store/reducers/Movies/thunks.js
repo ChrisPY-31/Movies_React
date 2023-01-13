@@ -54,7 +54,6 @@ export const getCategory = (category) => {
       dispatch(getCategoryMovie(data.results))
     }
 
-    console.log(category.name);
-    // const {data} = await FechApi.get(`${apiComedi}`)
+   
   };
 };

@@ -13,8 +13,7 @@ const Category = () => {
   useEffect(() => {
     dispatch(getCategory(getcategorylink));
   }, [getcategorylink]);
-  console.log(category);
-  console.log(getcategorylink);
+  
   return (
     <section className="container ">
       <div className="row">

@@ -11,7 +11,6 @@ import MoviesHome from "./components/MoviesHome/MoviesHome";
 
 const App = () => {
   const { isLoading } = useSelector((state) => state.movie);
-  console.log(isLoading);
 
   const dispatch = useDispatch();
 

@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import "./SearchCard.css";
 const SearchCard = () => {
   const { search, imagen } = useSelector((state) => state.movie);
-  console.log(search);
+
   return (
     <div className="searchCard container ">
       <h2 className="searchCard__title text-light">Movies Search</h2>

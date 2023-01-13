@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 
 const DescriptionMovie = () => {
   const { description, imagen } = useSelector((state) => state.movie);
-  console.log(description);
+  
   const divStyle = {
     backgroundImage: ` url(${imagen}${description.backdrop_path})`,
   };
