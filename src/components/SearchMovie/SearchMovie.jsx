@@ -7,7 +7,7 @@ const SearchMovie = () => {
   const {busqueda} = useSelector(state => state.movie)
   const dispatch = useDispatch()
   const [input, setInput] = useState('')
-  const [form , setForm] = useState()
+  const [form , setForm] = useState('')
 
   const handleSubmit= (e)=>{
     e.preventDefault()
