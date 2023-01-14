@@ -19,7 +19,7 @@ const MoviesCard = () => {
         {movie.length === 0
           ? ""
           : movie.map((peli) => (
-              <div className="col-12 col-md-3 col-lg-4 mb-5" key={peli.id}>
+              <div className="col-12 col-md-6 col-lg-4 mb-5" key={peli.id}>
                 <div className="card-tamaño card">
                   <img
                     src={`${imagen}${peli.poster_path}`}

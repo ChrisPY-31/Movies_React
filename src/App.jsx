@@ -9,7 +9,6 @@ import { DescriptionMovie } from "./components/DescriptionMovie/DescriptionMovie
 import { Category } from "./components/Category/Category";
 import MoviesHome from "./components/MoviesHome/MoviesHome";
 import SearchMovie from "./components/SearchMovie/SearchMovie";
-
 const App = () => {
   const { isLoading } = useSelector((state) => state.movie);
 
@@ -33,7 +32,7 @@ const App = () => {
         <Route path="/" element={<MoviesHome />} />
         <Route path="descripcion/:id" element={<DescriptionMovie />} />
         <Route path="category/:name" element={<Category />} />
-        <Route path="SearchMovie" element={<SearchMovie/>} />
+        <Route path="SearchMovie" element={<SearchMovie/>}/>
       </Routes>
     </div>
   );

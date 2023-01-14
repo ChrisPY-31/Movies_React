@@ -1,8 +1,14 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import "./SearchCard.css";
-const SearchCard = () => {
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { setDescription } from "../../store/reducers/Movies/movieSlice";
+const SearchCard = ( {form}) => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const { search, imagen } = useSelector((state) => state.movie);
+
 
   return (
     <div className="searchCard container ">
@@ -20,6 +26,7 @@ const SearchCard = () => {
       </div>
     </div>
   );
+
 };
 
 export { SearchCard };

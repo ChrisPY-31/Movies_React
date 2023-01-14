@@ -28,7 +28,7 @@ const SearchMovie = () => {
       />
       <button className="busqueda__button btn btn-outline-danger  ">Search</button>
       </form>
-      <SearchCard/>
+      <SearchCard />
     </div>
   )
 }
