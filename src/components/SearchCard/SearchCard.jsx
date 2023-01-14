@@ -6,10 +6,10 @@ const SearchCard = () => {
 
   return (
     <div className="searchCard container ">
-      <h2 className="searchCard__title text-light">Movies Search</h2>
+      <h2 className="searchCard__title text-white">Movies Search</h2>
       <div className="row">
         {search.map((movie) => (
-          <div className="searchCard__movie col-4 " key={movie.id}>
+          <div className="searchCard__movie col-12 col-sm-12 col-md-6 col-lg-4 " key={movie.id}>
             <img
               src={`${imagen}${movie.poster_path}`}
               alt=""

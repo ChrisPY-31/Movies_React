@@ -1,94 +1,29 @@
-.busqueda {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    #1b1b32;
-  position: absolute;
-  margin-top: 7rem;
+.busqueda{
+  background:linear-gradient(0deg, rgba(0,0,0 ,0.5),rgba(0,0,0 ,0.5)), #1b1b32 ;
   min-height: 100vh;
-  width: 100%;
-  z-index: 100;
-  -webkit-animation: busqueda 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: busqueda 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  margin-bottom: 1rem;
 }
-.busqueda__input {
-  height: 13rem;
+.busqueda__input{
+  padding: .5rem 3rem;
   width: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(204, 204, 204, 0.5),
-    rgba(204, 204, 204, 0.5),
-    #767691
-  );
+  font-size: 3rem;
   outline: none;
   border: none;
-  font-size: 7rem;
-  color: white;
-  padding-left: 10rem;
-  font-weight: bold;
-  cursor: pointer;
+  border-radius: 1rem;
+  background:linear-gradient(0deg, rgba(1, 2, 52, 0.2),rgba(2, 1, 37, 0.2)), #1b1b32;
 }
-.cerrar {
-  -webkit-animation: cerrar 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: cerrar 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-}
+.busqueda__formulario{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
 
-@-webkit-keyframes busqueda {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
+ 
 }
-@keyframes busqueda {
-  0% {
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-  }
-}
-
-@-webkit-keyframes cerrar {
-  0% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
-@keyframes cerrar {
-  0% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
+.busqueda__button{
+  width: 13rem;
+  height: 5rem;
+  margin-left: 5rem;
 }

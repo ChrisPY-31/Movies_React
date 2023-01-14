@@ -20,7 +20,7 @@ const Navegacion = () => {
               <Link className="nav__link text-uppercase" to={'/'}>Inicio</Link>
             </li>
             <li>
-              <Link className="nav__link text-uppercase" onClick={()=>dispatch(getBusqueda())}>Busqueda</Link>
+              <Link className="nav__link text-uppercase" to={'SearchMovie'}>Busqueda</Link>
             </li>
             <li>
               <Link className="nav__link text-uppercase">Mi lista</Link>{" "}
@@ -39,9 +39,7 @@ const Navegacion = () => {
           />
         </div>
       </div>
-      {busqueda &&(
-        <SearchMovie/>
-      )}
+      
     </nav>
   );
 };

@@ -1,11 +1,11 @@
 .description{
-    height: 90vh;    
+    height: 91vh;    
     display: flex;
     align-items: center;
     background:linear-gradient(0deg, rgba(0,0,0 ,0.5),rgba(0,0,0 ,0.5)), #1b1b32 ;
 }
 .description__image{
-    height: 57rem;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center center;
@@ -79,6 +79,7 @@
 .description__average{
     font-size: 2.5rem;
     font-weight: 600;
+    margin: 0;
 }
 .description__porcen{
     font-size: 1rem;
