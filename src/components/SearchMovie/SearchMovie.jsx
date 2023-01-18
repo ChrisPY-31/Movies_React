@@ -13,7 +13,9 @@ const SearchMovie = () => {
     setForm(input)
   }
   useEffect(()=>{
-   dispatch(getSearch(form))
+    if(Object.keys(form).length > 0){
+      dispatch(getSearch(form))
+    }
   },[form])
   return (
     <div className='busqueda'>
